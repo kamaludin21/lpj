@@ -7,7 +7,7 @@ const imagekit = new ImageKit({
 	privateKey: process.env.NUXT_IMAGEKIT_PRIVATE_KEY
 });
 
-export default function index(res) {
+export default function index(req, res) {
 	const result = imagekit.getAuthenticationParameters();
 	res.send(result);
 }

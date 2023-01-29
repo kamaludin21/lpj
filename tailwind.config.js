@@ -9,7 +9,11 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      width: ['hover'],
+      transitionDelay: ['hover','group-hover'],
+      animation: ['group-hover'],
+    },
   },
   plugins: [],
 }
